@@ -1,7 +1,7 @@
 FROM python:3-slim
 
 ADD diagslave.tgz /
-RUN mv /diagslave/linux_x86-64/diagslave /usr/bin && rm -rf /diagslave
+RUN mv /diagslave/x86_64-linux-gnu/diagslave /usr/bin && rm -rf /diagslave
 
 ADD cmd.py /
 
